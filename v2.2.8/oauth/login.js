@@ -19,7 +19,7 @@ define(["exports", "../websockets/binary_websockets", "../windows/windows", "../
     function g() {
         var e = a.default.app_id,
             i = new URL(window.location.href).hostname.includes("binary.me") ? ".me" : ".com",
-            o = "https://" + (a.default.server_url.includes("qa") ? a.default.server_url : "oauth.binary" + i) + "/oauth2/authorize?app_id=" + e + "&l=" + (local_storage.get("i18n") || {
+            o = "https://" + (a.default.server_url.includes("qa") ? a.default.server_url : "oauth.binary.me") + "/oauth2/authorize?app_id=" + e + "&l=" + (local_storage.get("i18n") || {
                 value: "en"
             }).value;
         window.location = o
